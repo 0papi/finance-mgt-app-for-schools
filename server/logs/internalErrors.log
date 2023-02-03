@@ -1,0 +1,12 @@
+2023-02-03T04:43:21.177Z error: uncaughtException: This is a custom error
+Error: This is a custom error
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\index.ts:31:9
+    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:280:10)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express-winston\index.js:429:9
+    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
