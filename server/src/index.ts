@@ -1,9 +1,18 @@
 import { format } from "winston";
 import { transports } from "winston";
+import cors from "cors";
 import express, { Request, Response } from "express";
 import expressWinston from "express-winston";
 import { config } from "./config/secret";
 import { formatErrorMessage, logger } from "./helpers/logger";
+import connectDB from "./database";
+import { InstitutionModel } from "./database/models/Institution";
+
+/**
+ * @description initiate connection to mongoDB database
+ */
+
+connectDB();
 
 const app = express();
 
@@ -18,17 +27,16 @@ app.use(
   })
 );
 
+/**
+ * @description initiate middleware functions
+ */
+
+app.use(cors());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 app.get("/", (req: Request, res: Response) => {
   res.send("Welcome to Finance Management System");
-});
-
-app.get("/warn", (req: Request, res: Response) => {
-  logger.warn("This is a warn log");
-  res.status(400).send("You are getting a warning");
-});
-
-app.get("/error", (req: Request, res: Response) => {
-  throw new Error("This is a custom error");
 });
 
 app.use(

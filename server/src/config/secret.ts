@@ -5,6 +5,11 @@
  * @author Evans Kojo Kwofie
  */
 
+import dotEnv from "dotenv";
+
+dotEnv.config();
+
 export const config = {
   PORT: 5000,
+  mongoConnectionString: process.env.MONGO_URI ?? "",
 };

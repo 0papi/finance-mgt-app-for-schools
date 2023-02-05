@@ -1,7 +1,7 @@
 /**
  * @description states all data fields required to create an institution account
  */
-const DOCUMENT_NAME = "Institution";
+export const DOCUMENT_NAME = "Institution";
 import { model, Schema, Types } from "mongoose";
 
 export interface IInstitute {
@@ -10,6 +10,8 @@ export interface IInstitute {
   location: string;
   phone: number;
   password: string;
+  email: string;
+  verified: boolean;
 }
 
 const InstitutionSchema = new Schema<IInstitute>({
@@ -31,6 +33,14 @@ const InstitutionSchema = new Schema<IInstitute>({
     type: Schema.Types.String,
     unique: true,
     required: true,
+  },
+  verified: {
+    type: Schema.Types.Boolean,
+    unique: true,
+  },
+  email: {
+    type: Schema.Types.String,
+    unique: true,
   },
 });
 

@@ -1,0 +1,5 @@
+# Implementation of Authentication Logic
+
+This application utilizies an institutionID + password authentication pattern as opposed to the email and password logins. What this means is that when an institution is created, the institution creator, presumably the administrator, will need to log in using an institutionID or number that is automatically generated on the backend and sent as part of the respond payload. The pattern for this is explained below:
+
+1. Upon Registery: When a user first registers, the user will provide the name of the institution, password, location, email and phone number. A password hash would be created and added to the database. Then an otp will be created and saved to the database with the institution identifier. The otp will be sent to the user's email address as well as their phone number.

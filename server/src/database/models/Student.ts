@@ -1,6 +1,6 @@
-import { Schema, Types, model } from "mongoose";
+import { Schema, model } from "mongoose";
 
-const DOCUMENT_NAME = "Student";
+const STUDENT_DOCUMENT_NAME = "Student";
 
 const StudentSchema = new Schema({
   class: {
@@ -22,6 +22,10 @@ const StudentSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "Institution",
   },
+  createdAt: {
+    type: Schema.Types.Date,
+    select: false,
+  },
 });
 
-export const StudentModel = model(DOCUMENT_NAME, StudentSchema);
+export const StudentModel = model(STUDENT_DOCUMENT_NAME, StudentSchema);

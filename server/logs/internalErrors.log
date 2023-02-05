@@ -1,12 +1,12 @@
-2023-02-03T04:43:21.177Z error: uncaughtException: This is a custom error
-Error: This is a custom error
-    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\index.ts:31:9
-    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
-    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:346:12)
-    at next (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:280:10)
-    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express-winston\index.js:429:9
-    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
+2023-02-03T20:10:13.560Z error: uncaughtException: Unexpected number in JSON at position 74
+SyntaxError: Unexpected number in JSON at position 74
+    at JSON.parse (<anonymous>)
+    at parse (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\raw-body\index.js:231:16)
+    at done (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1358:12)
