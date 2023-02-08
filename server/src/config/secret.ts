@@ -12,4 +12,6 @@ dotEnv.config();
 export const config = {
   PORT: 5000,
   mongoConnectionString: process.env.MONGO_URI ?? "",
+  nexmoKey: process.env.NEXMO_API_KEY ?? "",
+  nexmoSecret: process.env.NEXMO_API_SECRET ?? "",
 };
