@@ -1,16 +1,12 @@
 import { Schema, Types, model } from "mongoose";
 
-const TOKEN_NAME = "Token";
+const TOKEN_NAME = "RefreshToken";
 
 const TokenSchema = new Schema({
   owner: {
     type: Types.ObjectId,
     ref: "Institution",
-    required: true,
-  },
-  token: {
-    type: Schema.Types.String,
-    required: true,
+    unique: true,
   },
 });
 

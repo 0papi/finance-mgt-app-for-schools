@@ -466,3 +466,590 @@
   },
   timestamp: '2023-02-06T07:14:59.480Z'
 }
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 11901792,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 11903679,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 11902339,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-08T15:17:52.144Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13206523,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13206478,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13206896,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-08T15:39:36.832Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13357770,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13357663,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13358164,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-08T15:42:07.623Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13480284,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13480685,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13480313,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-08T15:44:10.401Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13528892,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13528744,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 13528697,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-08T15:44:58.263Z'
+}
+{
+  level: 'error',
+  message: 'HTTP POST /identifier',
+  metadata: {
+    meta: {
+      req: {
+        url: '/identifier',
+        headers: {
+          'content-length': '46',
+          'accept-encoding': 'gzip, deflate, br',
+          accept: '*/*',
+          'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+          'content-type': 'application/json',
+          host: 'localhost:5000',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/identifier',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 183
+    }
+  },
+  timestamp: '2023-02-08T15:46:05.110Z'
+}

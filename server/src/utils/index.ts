@@ -7,7 +7,7 @@ type TFunc = (
   session: mongoose.ClientSession
 ) => Promise<any>;
 
-export function withTransaction(fn: TFunc) {
+export function withTransaction(fn) {
   return async function (req: Request, res: Response, next: NextFunction) {
     let result;
     await mongoose.connection.transaction(async (session) => {

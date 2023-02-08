@@ -8,6 +8,8 @@ import { formatErrorMessage, logger } from "./helpers/logger";
 import connectDB from "./database";
 import { HttpError } from "./errors/httpError";
 import { errorHandler } from "./utils";
+import routes from "./routes";
+import { getInstitutionNumber } from "./helpers/getInstitutionNumber";
 
 /**
  * @description initiate connection to mongoDB database
@@ -16,6 +18,7 @@ import { errorHandler } from "./utils";
 connectDB();
 
 const app = express();
+app.use("/api", routes);
 
 /**
  * @description initiate logger
@@ -68,6 +71,13 @@ app.get(
     };
 
     return data;
+  })
+);
+
+app.post(
+  "/identifier",
+  errorHandler((req, res) => {
+    return getInstitutionNumber(req.body.institution);
   })
 );
 
