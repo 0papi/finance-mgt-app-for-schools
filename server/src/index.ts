@@ -9,7 +9,7 @@ import connectDB from "./database";
 import { HttpError } from "./errors/httpError";
 import { errorHandler } from "./utils";
 import routes from "./routes";
-import { getInstitutionNumber } from "./helpers/getInstitutionNumber";
+import UserIdGeneratorService from "./helpers/createInstitutionNumber";
 
 /**
  * @description initiate connection to mongoDB database
@@ -76,8 +76,12 @@ app.get(
 
 app.post(
   "/identifier",
-  errorHandler((req, res) => {
-    return getInstitutionNumber(req.body.institution);
+  errorHandler(async (req, res) => {
+    // return generateInstitutionNumber(req.body.institution);
+    const userId = await UserIdGeneratorService.generateId(
+      req.body.institution
+    );
+    return userId;
   })
 );
 
