@@ -1,7 +1,7 @@
-import { Request } from "express";
 import { errorHandler, withTransaction } from "../utils";
+import { Request, Response } from "express";
 
-export const register = errorHandler(
+const logout = errorHandler(
   withTransaction(async (req: Request, res: Response) => {
     const data = {
       name: req.body.username,
@@ -11,3 +11,5 @@ export const register = errorHandler(
     };
   })
 );
+
+export default logout;

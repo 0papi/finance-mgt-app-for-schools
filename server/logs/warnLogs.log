@@ -1340,3 +1340,456 @@
   },
   timestamp: '2023-02-09T05:49:12.470Z'
 }
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69330769,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69329729,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69329548,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-09T07:14:44.735Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69492691,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69492391,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69492886,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-09T07:17:26.432Z'
+}
+{
+  level: 'error',
+  message: "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/",
+  metadata: {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-00.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69660595,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.248.53:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-01.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69662587,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.246.91.187:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017' => ServerDescription {
+          address: 'ac-x9cmgy0-shard-00-02.auxdvxn.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 69660307,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connection <monitor> to 13.245.245.174:27017 closed
+              at Connection.onClose (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:333:13)
+              at TLSSocket.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:242:42)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.emit (node:domain:489:12)
+              at node:net:301:12
+              at TCP.done (node:_tls_wrap:588:7) {
+            [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-qy9yfw-shard-0',
+      maxElectionId: null,
+      maxSetVersion: null,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  timestamp: '2023-02-09T07:20:15.990Z'
+}
+{
+  level: 'error',
+  message: "TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.\n" +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:17:9\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:15:67\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:14:22\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-09T11:51:48.317Z'
+}
+{
+  level: 'error',
+  message: "TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.\n" +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:17:9\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:15:67\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:14:22\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-09T11:53:50.135Z'
+}
+{
+  level: 'error',
+  message: "TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.\n" +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:17:9\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:15:67\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:14:22\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-09T12:01:07.725Z'
+}
+{
+  level: 'error',
+  message: "TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.\n" +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:17:9\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:15:67\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:14:22\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-09T12:01:19.521Z'
+}
+{
+  level: 'error',
+  message: 'ValidationError: Institution validation failed: institutionNumber: Cast to Number failed for value "FLA/MGAPP/2023/0008" (type string) at path "institutionNumber"\n' +
+    '    at model.Document.invalidate (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\document.js:3125:32)\n' +
+    '    at model.$set (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\document.js:1465:12)\n' +
+    '    at model.$set (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\document.js:1148:16)\n' +
+    '    at model.Document (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\document.js:166:12)\n' +
+    '    at model.Model (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\model.js:122:12)\n' +
+    '    at new model (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\model.js:5092:15)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\model.js:3197:22\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\model.js:3232:7\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongoose\\lib\\model.js:3231:15',
+  metadata: {},
+  timestamp: '2023-02-09T12:03:24.321Z'
+}
+{
+  level: 'error',
+  message: 'Error: Please provide required fields\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:50:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  metadata: {},
+  timestamp: '2023-02-09T12:09:50.192Z'
+}
+{
+  level: 'error',
+  message: 'Error: Please provide required fields\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:50:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  metadata: {},
+  timestamp: '2023-02-09T12:15:20.302Z'
+}
+{
+  level: 'error',
+  message: 'TypeError: Converting circular structure to JSON\n' +
+    "    --> starting at object with constructor 'MongoClient'\n" +
+    "    |     property 's' -> object with constructor 'Object'\n" +
+    "    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n" +
+    "    --- property 'client' closes the circle\n" +
+    '    at JSON.stringify (<anonymous>)\n' +
+    '    at stringify (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\express\\lib\\response.js:1150:12)\n' +
+    '    at ServerResponse.json (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\express\\lib\\response.js:271:14)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:31:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  metadata: {},
+  timestamp: '2023-02-09T12:16:26.098Z'
+}

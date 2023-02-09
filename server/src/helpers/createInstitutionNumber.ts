@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { InstitutionNumber } from "../database/models/institutionNumber";
 
 async function findLastStoredId() {
-  return await InstitutionNumber.find().sort({ _id: -1 }).limit(1);
+  return (await InstitutionNumber.find().sort({ _id: -1 }).limit(1)) ?? 0;
 }
 
 class UserIdGeneratorService {
@@ -36,7 +36,7 @@ class UserIdGeneratorService {
       .padStart(4, "0");
 
     // add the last four digits to the database
-    const storedId = InstitutionNumber.create({
+    await InstitutionNumber.create({
       institutionNumber: paddedId,
     });
 

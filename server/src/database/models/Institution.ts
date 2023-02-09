@@ -9,9 +9,14 @@ export interface IInstitute {
   name: string;
   location: string;
   phone: number;
+  institutionNumber: string;
   password: string;
   email: string;
   verified: boolean;
+  typeOfInstitution: string;
+  phoneOfPersonRegistering: number;
+  positionOfPersonRegistering: string;
+  nameOfPersonRegistering: string;
 }
 
 const InstitutionSchema = new Schema<IInstitute>({
@@ -29,10 +34,16 @@ const InstitutionSchema = new Schema<IInstitute>({
     unique: true,
     required: true,
   },
+  institutionNumber: {
+    type: Schema.Types.String,
+    unique: true,
+    required: true,
+  },
   password: {
     type: Schema.Types.String,
     unique: true,
     required: true,
+    select: false,
   },
   verified: {
     type: Schema.Types.Boolean,
@@ -42,9 +53,18 @@ const InstitutionSchema = new Schema<IInstitute>({
     type: Schema.Types.String,
     unique: true,
   },
+  typeOfInstitution: {
+    type: Schema.Types.String,
+  },
+  phoneOfPersonRegistering: {
+    type: Schema.Types.Number,
+  },
+  positionOfPersonRegistering: {
+    type: Schema.Types.String,
+  },
+  nameOfPersonRegistering: {
+    type: Schema.Types.String,
+  },
 });
 
-export const InstitutionModel = model<IInstitute>(
-  DOCUMENT_NAME,
-  InstitutionSchema
-);
+export const Institution = model<IInstitute>(DOCUMENT_NAME, InstitutionSchema);

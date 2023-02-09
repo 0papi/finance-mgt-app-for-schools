@@ -10,4 +10,4 @@ const TokenSchema = new Schema({
   },
 });
 
-export const TokenModel = model(TOKEN_NAME, TokenSchema);
+export const RefreshToken = model(TOKEN_NAME, TokenSchema);

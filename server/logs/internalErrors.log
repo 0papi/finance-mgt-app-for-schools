@@ -22,3 +22,92 @@ TypeError: sendMessage is not a function
     at next (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\index.js:280:10)
     at jsonParser (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\body-parser\lib\types\json.js:110:7)
     at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
+2023-02-09T11:51:48.316Z error: uncaughtException: Cannot destructure property 'name' of 'req.body' as it is undefined.
+TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:17:9
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:15:67
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:14:22
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)
+2023-02-09T11:53:50.135Z error: uncaughtException: Cannot destructure property 'name' of 'req.body' as it is undefined.
+TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:17:9
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:15:67
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:14:22
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)
+2023-02-09T12:01:07.724Z error: uncaughtException: Cannot destructure property 'name' of 'req.body' as it is undefined.
+TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:17:9
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:15:67
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:14:22
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)
+2023-02-09T12:01:19.521Z error: uncaughtException: Cannot destructure property 'name' of 'req.body' as it is undefined.
+TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined.
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:17:9
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:15:67
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:14:22
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)
+2023-02-09T12:03:24.320Z error: uncaughtException: Institution validation failed: institutionNumber: Cast to Number failed for value "FLA/MGAPP/2023/0008" (type string) at path "institutionNumber"
+ValidationError: Institution validation failed: institutionNumber: Cast to Number failed for value "FLA/MGAPP/2023/0008" (type string) at path "institutionNumber"
+    at model.Document.invalidate (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\document.js:3125:32)
+    at model.$set (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\document.js:1465:12)
+    at model.$set (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\document.js:1148:16)
+    at model.Document (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\document.js:166:12)
+    at model.Model (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\model.js:122:12)
+    at new model (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\model.js:5092:15)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\model.js:3197:22
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongoose\lib\model.js:3231:15
+2023-02-09T12:09:50.192Z error: uncaughtException: Please provide required fields
+Error: Please provide required fields
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:50:15
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-02-09T12:15:20.301Z error: uncaughtException: Please provide required fields
+Error: Please provide required fields
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:50:15
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-02-09T12:16:26.097Z error: uncaughtException: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\response.js:1150:12)
+    at ServerResponse.json (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\express\lib\response.js:271:14)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:31:13
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

@@ -1,5 +1,6 @@
 import { format } from "winston";
 import { transports } from "winston";
+import bodyParser from "body-parser";
 import cors from "cors";
 import express, { NextFunction, Request, Response } from "express";
 import expressWinston from "express-winston";
@@ -9,7 +10,6 @@ import connectDB from "./database";
 import { HttpError } from "./errors/httpError";
 import { errorHandler } from "./utils";
 import routes from "./routes";
-import UserIdGeneratorService from "./helpers/createInstitutionNumber";
 
 /**
  * @description initiate connection to mongoDB database
@@ -17,7 +17,13 @@ import UserIdGeneratorService from "./helpers/createInstitutionNumber";
 
 connectDB();
 
+/**
+ * @description initiate middleware functions
+ */
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api", routes);
 
 /**
@@ -30,14 +36,6 @@ app.use(
     statusLevels: true,
   })
 );
-
-/**
- * @description initiate middleware functions
- */
-
-app.use(cors());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
 
 app.use(
   expressWinston.errorLogger({
@@ -71,17 +69,6 @@ app.get(
     };
 
     return data;
-  })
-);
-
-app.post(
-  "/identifier",
-  errorHandler(async (req, res) => {
-    // return generateInstitutionNumber(req.body.institution);
-    const userId = await UserIdGeneratorService.generateId(
-      req.body.institution
-    );
-    return userId;
   })
 );
 

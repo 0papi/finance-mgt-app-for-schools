@@ -1,11 +1,16 @@
 import jwt from "jsonwebtoken";
-export const createAccessToken = (userId: string) => {
+import { Schema, Types } from "mongoose";
+
+export const createAccessToken = (userId: Types.ObjectId) => {
   return jwt.sign({ userId }, process.env.ACCESS_TOKEN_SECRET!, {
     expiresIn: "10m",
   });
 };
 
-export function createRefreshToken(userId: string, refreshTokenId: string) {
+export function createRefreshToken(
+  userId: Types.ObjectId,
+  refreshTokenId: Types.ObjectId
+) {
   return jwt.sign(
     {
       userId: userId,
