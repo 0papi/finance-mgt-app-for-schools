@@ -111,3 +111,9 @@ TypeError: Converting circular structure to JSON
     at Generator.next (<anonymous>)
     at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-02-09T12:26:05.795Z error: uncaughtException: Institution already exists
+Error: Institution already exists
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:31:15
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.signup.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

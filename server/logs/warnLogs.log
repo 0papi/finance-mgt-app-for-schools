@@ -1793,3 +1793,13 @@
   metadata: {},
   timestamp: '2023-02-09T12:16:26.098Z'
 }
+{
+  level: 'error',
+  message: 'Error: Institution already exists\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:31:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.signup.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  metadata: {},
+  timestamp: '2023-02-09T12:26:05.796Z'
+}
