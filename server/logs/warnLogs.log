@@ -2283,3 +2283,65 @@
   },
   timestamp: '2023-02-10T08:42:05.833Z'
 }
+{
+  level: 'error',
+  message: "MongoServerError: E11000 duplicate key error collection: test.refreshtokens index: owner_1 dup key: { owner: ObjectId('63e4e698ef91a6da33234605') }\n" +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\operations\\insert.ts:85:25\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\cmap\\connection_pool.ts:569:13\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\sdam\\server.ts:370:13\n' +
+    '    at handleOperationResult (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\sdam\\server.ts:503:14)\n' +
+    '    at Connection.onMessage (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\cmap\\connection.ts:452:5)\n' +
+    '    at MessageStream.<anonymous> (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\cmap\\connection.ts:240:56)\n' +
+    '    at MessageStream.emit (node:events:513:28)\n' +
+    '    at MessageStream.emit (node:domain:489:12)\n' +
+    '    at processIncomingData (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:189:12)\n' +
+    '    at MessageStream._write (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:70:5)',
+  metadata: {},
+  timestamp: '2023-02-10T09:15:09.862Z'
+}
+{
+  level: 'error',
+  message: 'Error: Please provide refresh token\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.logout.ts:12:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.logout.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.logout.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\controllers\\auth.controller.logout.ts:10:67\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:18:22\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-10T09:36:44.661Z'
+}
+{
+  level: 'error',
+  message: 'Error: Unauthorised\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:72:11\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  metadata: {},
+  timestamp: '2023-02-10T09:37:11.216Z'
+}
+{
+  level: 'error',
+  message: 'Error: Unauthorised\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:72:11\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  metadata: {},
+  timestamp: '2023-02-10T09:49:08.438Z'
+}
+{
+  level: 'error',
+  message: 'Error: Unauthorised\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:72:11\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (D:\\Docs\\CODE\\MY_PROJECTS\\future-leaders-finances-management-app\\server\\src\\utils\\index.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  metadata: {},
+  timestamp: '2023-02-10T09:49:22.869Z'
+}

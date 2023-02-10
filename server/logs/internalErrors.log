@@ -141,3 +141,45 @@ MongoServerError: E11000 duplicate key error collection: test.refreshtokens inde
     at MessageStream.emit (node:domain:489:12)
     at processIncomingData (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\message_stream.ts:189:12)
     at MessageStream._write (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\message_stream.ts:70:5)
+2023-02-10T09:15:09.862Z error: uncaughtException: E11000 duplicate key error collection: test.refreshtokens index: owner_1 dup key: { owner: ObjectId('63e4e698ef91a6da33234605') }
+MongoServerError: E11000 duplicate key error collection: test.refreshtokens index: owner_1 dup key: { owner: ObjectId('63e4e698ef91a6da33234605') }
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\operations\insert.ts:85:25
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection_pool.ts:569:13
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\sdam\server.ts:370:13
+    at handleOperationResult (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\sdam\server.ts:503:14)
+    at Connection.onMessage (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:452:5)
+    at MessageStream.<anonymous> (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\connection.ts:240:56)
+    at MessageStream.emit (node:events:513:28)
+    at MessageStream.emit (node:domain:489:12)
+    at processIncomingData (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\message_stream.ts:189:12)
+    at MessageStream._write (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\node_modules\mongodb\src\cmap\message_stream.ts:70:5)
+2023-02-10T09:36:44.661Z error: uncaughtException: Please provide refresh token
+Error: Please provide refresh token
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.logout.ts:12:15
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.logout.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.logout.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\controllers\auth.controller.logout.ts:10:67
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:18:22
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)
+2023-02-10T09:37:11.215Z error: uncaughtException: Unauthorised
+Error: Unauthorised
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:72:11
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-02-10T09:49:08.437Z error: uncaughtException: Unauthorised
+Error: Unauthorised
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:72:11
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-02-10T09:49:22.869Z error: uncaughtException: Unauthorised
+Error: Unauthorised
+    at D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:72:11
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\Docs\CODE\MY_PROJECTS\future-leaders-finances-management-app\server\src\utils\index.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

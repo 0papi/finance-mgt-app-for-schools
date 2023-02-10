@@ -14,7 +14,7 @@ router.post("/signup", Register);
 router.post("/login", Login);
 router.post("/logout", Logout);
 router.post("/logoutAll", LogoutAll);
-router.post("/accessToken", AccessToken);
-router.post("/refreshToken", RefreshToken);
+router.post("/accesstoken", AccessToken);
+router.post("/refreshtoken", RefreshToken);
 
 export default router;
