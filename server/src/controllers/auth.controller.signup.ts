@@ -72,6 +72,7 @@ const registerInstitution = errorHandler(
         password: await argon2.hash(password),
       });
 
+      // create db instance of refresh token
       const refreshTokenDoc = await RefreshToken.create({
         owner: institution._id,
       });
