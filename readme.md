@@ -4,7 +4,7 @@ This is a finance management platform for a local school called Future Leaders' 
 
 # Tech Stack
 
-- React with Vite
+- Nextjs
 - Redux Toolkit
 - TailwindCSS
 - MongoDB Database
