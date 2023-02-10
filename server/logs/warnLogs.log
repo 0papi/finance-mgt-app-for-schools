@@ -2345,3 +2345,30 @@
   metadata: {},
   timestamp: '2023-02-10T09:49:22.869Z'
 }
+{
+  level: 'warn',
+  message: 'HTTP GET /api/students/all/388484',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/students/all/388484',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.30.0',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '0c85c8f3-4a83-413d-bc29-bb5febc484d6',
+          host: 'localhost:5000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/students/all/388484',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    }
+  },
+  timestamp: '2023-02-10T16:37:55.975Z'
+}

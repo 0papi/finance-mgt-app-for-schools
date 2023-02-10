@@ -13,6 +13,10 @@ const StudentSchema = new Schema({
     unique: true,
     required: true,
   },
+  location: {
+    type: Schema.Types.String,
+    required: true,
+  },
   lastName: {
     type: Schema.Types.String,
     unique: true,
@@ -21,6 +25,7 @@ const StudentSchema = new Schema({
   institution: {
     type: Schema.Types.ObjectId,
     ref: "Institution",
+    required: true,
   },
   createdAt: {
     type: Schema.Types.Date,
