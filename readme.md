@@ -7,6 +7,6 @@ This is a finance management platform for a local school called Future Leaders' 
 - Nextjs
 - Redux Toolkit
 - TailwindCSS
-- MongoDB Database
+- MongoDB
 - Express
 - Node
