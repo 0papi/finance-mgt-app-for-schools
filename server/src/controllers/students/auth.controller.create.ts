@@ -1,11 +1,10 @@
 import { ClientSession } from "mongoose";
-import { Request, Response } from "express";
+import { Response } from "express";
 import { errorHandler, withTransaction } from "../../utils";
 import {HttpError} from "../../errors/httpError";
 import {ErrorCodes} from "../../errors/errorCodes";
 import {Student} from "../../database/models/Student";
 import {RequestWithInstitutionId} from "../../middlewares/authMiddleware";
-
 
 
 const createStudent = errorHandler(

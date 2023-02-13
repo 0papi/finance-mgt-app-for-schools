@@ -213,3 +213,15 @@ Error: Unauthorized
     at Generator.next (<anonymous>)
     at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\utils\index.ts:8:71
     at new Promise (<anonymous>)
+2023-02-13T12:10:33.923Z error: uncaughtException: Unauthorized
+Error: Unauthorized
+    at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\middlewares\authMiddleware.ts:28:13
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\middlewares\authMiddleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\middlewares\authMiddleware.ts:4:12)
+    at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\middlewares\authMiddleware.ts:12:78
+    at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\utils\index.ts:30:28
+    at Generator.next (<anonymous>)
+    at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\utils\index.ts:8:71
+    at new Promise (<anonymous>)

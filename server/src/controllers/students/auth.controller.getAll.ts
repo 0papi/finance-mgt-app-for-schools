@@ -1,11 +1,15 @@
 import { ClientSession } from "mongoose";
-import { Request, Response } from "express";
+import { Response } from "express";
 import { errorHandler, withTransaction } from "../../utils";
+import {Student} from "../../database/models/Student";
+import {RequestWithInstitutionId} from "../../middlewares/authMiddleware";
 
 const getAllStudents = errorHandler(
   withTransaction(
-    async (req: Request, res: Response, session: ClientSession) => {
-      return { message: "Get all student recors here" };
+    async (req: RequestWithInstitutionId, res: Response, session: ClientSession) => {
+        const institutionId = req.institutionId;
+        const students = await Student.find({ institution: institutionId }).exec();
+        return students;
     }
   )
 );
