@@ -9,14 +9,16 @@ import { HttpError } from "../errors/httpError";
 const refreshToken = errorHandler(
   withTransaction(
     async (req: Request, res: Response, session: ClientSession) => {
-      if (!req.body.refreshToken) {
+      const refreshTokenFromUser = req.body.refreshToken;
+
+      if (!refreshTokenFromUser) {
         throw new HttpError(
           ErrorCodes.BadRequest,
           "Please provide refresh token"
         );
       }
       const currentRefreshToken = await validateRefreshToken(
-        req.body.refreshToken
+        refreshTokenFromUser
       );
       let refreshTokenDoc = await RefreshToken.findOne({
         owner: currentRefreshToken.institutionId,

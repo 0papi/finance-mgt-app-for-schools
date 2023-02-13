@@ -5,10 +5,11 @@ import { createAccessToken } from "../helpers/tokenCreator";
 import { errorHandler, validateRefreshToken } from "../utils";
 
 const accessToken = errorHandler(async (req: Request, res: Response) => {
-  if (!req.body.refreshToken) {
+  const refreshTokenFromUser = req.body.refreshToken;
+  if (!refreshTokenFromUser) {
     throw new HttpError(ErrorCodes.BadRequest, "Please provide refresh token");
   }
-  const refreshToken = await validateRefreshToken(req.body.refreshToken);
+  const refreshToken = await validateRefreshToken(refreshTokenFromUser);
   const accessToken = createAccessToken(refreshToken.institutionId);
 
   return {

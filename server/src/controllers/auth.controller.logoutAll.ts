@@ -8,13 +8,15 @@ import { ErrorCodes } from "../errors/errorCodes";
 const logoutAll = errorHandler(
   withTransaction(
     async (req: Request, res: Response, session: ClientSession) => {
-      if (!req.body.refreshToken) {
+      const refreshTokenFromUser = req.body.refreshToken;
+
+      if (!refreshTokenFromUser) {
         throw new HttpError(
           ErrorCodes.BadRequest,
           "Please provide refresh token"
         );
       }
-      const refreshToken = await validateRefreshToken(req.body.refreshToken);
+      const refreshToken = await validateRefreshToken(refreshTokenFromUser);
       await RefreshToken.deleteMany(
         { owner: refreshToken.institutionId },
         { session }
