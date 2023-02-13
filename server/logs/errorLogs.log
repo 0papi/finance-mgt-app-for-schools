@@ -2282,3 +2282,14 @@
   metadata: {},
   timestamp: '2023-02-13T12:10:33.927Z'
 }
+{
+  level: 'error',
+  message: 'Error: Bad request. Required fields not provided\n' +
+    '    at exports.validateStudentUpdate (D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\helpers\\validateReq.ts:14:19)\n' +
+    '    at Layer.handle [as handle_request] (D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at middleware (D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\node_modules\\express-validator\\src\\middlewares\\check.js:16:13)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  metadata: {},
+  timestamp: '2023-02-13T13:02:29.105Z'
+}

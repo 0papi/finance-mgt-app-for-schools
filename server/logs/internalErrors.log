@@ -225,3 +225,10 @@ Error: Unauthorized
     at Generator.next (<anonymous>)
     at D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\utils\index.ts:8:71
     at new Promise (<anonymous>)
+2023-02-13T13:02:29.104Z error: uncaughtException: Bad request. Required fields not provided
+Error: Bad request. Required fields not provided
+    at exports.validateStudentUpdate (D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\src\helpers\validateReq.ts:14:19)
+    at Layer.handle [as handle_request] (D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\node_modules\express\lib\router\route.js:144:13)
+    at middleware (D:\Docs\CODE\MY_PROJECTS\finances-management-app\server\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
