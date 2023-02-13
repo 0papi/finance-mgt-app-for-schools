@@ -4,7 +4,7 @@ import { HttpError } from "../errors/httpError";
 import { errorHandler } from "../utils";
 import { ErrorCodes } from "../errors/errorCodes";
 
-interface RequestWithInstitutionId extends Request {
+export interface RequestWithInstitutionId extends Request {
   institutionId: string;
 }
 

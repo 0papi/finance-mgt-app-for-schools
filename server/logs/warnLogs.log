@@ -2398,3 +2398,54 @@
   metadata: {},
   timestamp: '2023-02-10T22:02:50.759Z'
 }
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:5000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'en-US,en;q=0.9',
+          cookie: '_ga=GA1.1.2069093073.1673883264; _ga_3B59GK1KD3=GS1.1.1674133349.1.0.1674133490.0.0.0; next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..OK8mtgPSmTDtjdVC.s6nt-Oo_i56BJf__Wz5hGINxtQlGkaDt-11LmbamzxJYQZBR8qn8fP6knMhNea2IJyRAZyBrg8P2OEp2esUxI2SJLLY_ve3uYVr8XBxG2dLUb-__QhEKKddhAq5ed9dqq3ttwtyilBv_TQOpe6YtxjRtEZXb3C4VaHlwb4yA1qY6ioOmQkvA2-0znHSVfNBW9vHtLbFmsbXrU0FU5pfPepMvZVTURFZkkZjmEtwH7Q2d1VMy6gjzGLB0Y4dkBLr6AgnhwYtEKp6Ev0Id8y60ArK6kd1dipV-qsFctiHQn2Xl742pvBE_Tl-44xm1rTW2TM3093R068SMNmvoK6J0SgPqmnSK4b_X_sXXjbmtrk7dQ3aU8CCU1HaNnU3XNfpkopZQjtzazhS9jX2LLyR79gcC4Dk.-N_r5QOLQ8dg5kV8tIDGgg; _ga_E69GCDZ2WP=GS1.1.1675117519.17.0.1675117519.0.0.0'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 7
+    }
+  },
+  timestamp: '2023-02-13T11:35:14.796Z'
+}
+{
+  level: 'error',
+  message: 'Error: Unauthorized\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\middlewares\\authMiddleware.ts:28:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\middlewares\\authMiddleware.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\middlewares\\authMiddleware.ts:4:12)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\middlewares\\authMiddleware.ts:12:78\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\utils\\index.ts:30:28\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at D:\\Docs\\CODE\\MY_PROJECTS\\finances-management-app\\server\\src\\utils\\index.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  metadata: {},
+  timestamp: '2023-02-13T11:47:23.845Z'
+}

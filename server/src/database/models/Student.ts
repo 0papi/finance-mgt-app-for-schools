@@ -1,17 +1,30 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
 const STUDENT_DOCUMENT_NAME = "Student";
 
+interface IStudent {
+  _id: Types.ObjectId;
+  studentClass: string;
+  firstName: string;
+  lastName: string;
+  otherName: string;
+  location: string;
+  institution: Types.ObjectId,
+  createdAt: Schema.Types.Date
+}
+
 const StudentSchema = new Schema({
-  class: {
+  studentClass: {
     type: Schema.Types.String,
-    unique: true,
     required: true,
   },
   firstName: {
     type: Schema.Types.String,
-    unique: true,
     required: true,
+  },
+  otherName: {
+    type: Schema.Types.String,
+    required: false,
   },
   location: {
     type: Schema.Types.String,
@@ -19,7 +32,6 @@ const StudentSchema = new Schema({
   },
   lastName: {
     type: Schema.Types.String,
-    unique: true,
     required: true,
   },
   institution: {
@@ -33,4 +45,4 @@ const StudentSchema = new Schema({
   },
 });
 
-export const StudentModel = model(STUDENT_DOCUMENT_NAME, StudentSchema);
+export const Student = model(STUDENT_DOCUMENT_NAME, StudentSchema);
