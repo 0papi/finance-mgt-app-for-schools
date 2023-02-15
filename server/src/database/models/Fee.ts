@@ -6,7 +6,8 @@ import { Schema, model, Types, Date } from "mongoose";
 
 const FEE_DOCUMENT_NAME = "Fee";
 
-interface IFee {
+export interface IFee {
+  _id: Types.ObjectId;
   feeType: string;
   student: Types.ObjectId;
   institution: Types.ObjectId;
@@ -33,6 +34,10 @@ const FeeSchema = new Schema<IFee>({
     type: Schema.Types.Date,
     required: true,
   },
+  feeType: {
+    type: Schema.Types.String,
+    required: true,
+  },
 });
 
-export const Fee = model(FEE_DOCUMENT_NAME, FeeSchema);
+export const Fee = model<IFee>(FEE_DOCUMENT_NAME, FeeSchema);
