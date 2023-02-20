@@ -10,6 +10,7 @@ export { default as RefreshToken } from "./auth.controller.refreshToken";
 export { default as CreateStudent } from "./students/auth.controller.create";
 export { default as GetAllStudents } from "./students/auth.controller.getAll";
 export { default as GetSingleStudent } from "./students/auth.controller.getOne";
+export { default as StudentWithPayments } from "./students/auth.controller.studentWithPayments";
 export { default as UpdateSingleStudent } from "./students/auth.controller.updateSingleStudent";
 export { default as DeleteSingleStudent } from "./students/auth.controller.deleteSingleStudent";
 

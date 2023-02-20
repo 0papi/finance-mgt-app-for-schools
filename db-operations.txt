@@ -1,0 +1,105 @@
+I have two database schemas: Fee and Students. Whenever a fee is paid, I submit the information to the database along with the fee payer's id, so that I can have a relationship between the two. Now when I request the students information, I wanna go and fetch their payments and attach it to the payload, is that possible?
+
+import { Request, Response } from "express";
+import Student, { IStudent } from "../models/Student";
+import Fee, { IFee } from "../models/Fee";
+
+const getStudentWithFees = async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  // Find the student by id
+  const student: IStudent | null = await Student.findById(id);
+
+  if (!student) {
+    return res.status(404).json({ error: "Student not found" });
+  }
+
+  // Find the fees for the student
+  const fees: IFee[] = await Fee.find({ student: student._id });
+
+  // Attach the fees to the student object
+  const studentWithFees = {
+    ...student.toObject(),
+    fees: fees.map((fee) => fee.toObject()),
+  };
+
+  res.json(studentWithFees);
+};
+
+
+let's say that I have 300 students in my database, each with fee payment information. remember that the fee payment could be multiple for each student. I want to return the entire student information together with their fee payment records
+
+import { Request, Response } from "express";
+import Student, { IStudent } from "../models/Student";
+import Fee, { IFee } from "../models/Fee";
+
+const getAllStudentsWithFees = async (req: Request, res: Response) => {
+  try {
+    // Find all students
+    const students: IStudent[] = await Student.find();
+
+    // Create an array to hold the student objects with fee payment records
+    const studentsWithFees: Array<IStudent & { fees: IFee[] }> = [];
+
+    // Loop through each student and find their fee payment records
+    for (const student of students) {
+      const fees: IFee[] = await Fee.find({ student: student._id });
+      studentsWithFees.push({ ...student.toObject(), fees: fees.map(fee => fee.toObject()) });
+    }
+
+    res.json(studentsWithFees);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Server error" });
+  }
+};
+
+
+okay but imagine if there were 5000 students involved, that is a lot of data to loop through, isnt there a more optimized way to do this?
+
+import { Request, Response } from "express";
+import Student, { IStudent } from "../models/Student";
+import Fee, { IFee } from "../models/Fee";
+
+const getAllStudentsWithFees = async (req: Request, res: Response) => {
+  try {
+    const studentsWithFees: Array<IStudent & { fees: IFee[] }> = await Student.aggregate([
+      // Lookup the fees for each student
+      {
+        $lookup: {
+          from: "fees",
+          localField: "_id",
+          foreignField: "student",
+          as: "fees",
+        },
+      },
+      // Convert _id to id and merge with the fees array
+      {
+        $project: {
+          _id: 0,
+          id: "$_id",
+          name: 1,
+          email: 1,
+          fees: {
+            $map: {
+              input: "$fees",
+              as: "fee",
+              in: {
+                id: "$$fee._id",
+                feeType: "$$fee.feeType",
+                institution: "$$fee.institution",
+                amount: "$$fee.amount",
+                datePaid: "$$fee.datePaid",
+              },
+            },
+          },
+        },
+      },
+    ]);
+
+    res.json(studentsWithFees);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Server error" });
+  }
+};

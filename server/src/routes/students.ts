@@ -6,6 +6,7 @@ import {
   GetSingleStudent,
   UpdateSingleStudent,
   PayStudentFee,
+  StudentWithPayments,
 } from "../controllers";
 import verifyAccessToken from "../middlewares/authMiddleware";
 import { validateStudentUpdate } from "../helpers/validateReq";
@@ -15,6 +16,7 @@ const studentsRouter = express.Router();
 studentsRouter.post("/create", verifyAccessToken, CreateStudent);
 studentsRouter.get("/all", verifyAccessToken, GetAllStudents);
 studentsRouter.get("/all/:id", verifyAccessToken, GetSingleStudent);
+studentsRouter.get("/all/:id/payments", verifyAccessToken, StudentWithPayments);
 studentsRouter.put(
   "/all/:id/update",
   verifyAccessToken,
