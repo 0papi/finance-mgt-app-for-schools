@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { Inter } from "@next/font/google";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,8 +9,10 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${inter.variable}`}>
-      <Component {...pageProps} />
-    </main>
+    <ThemeProvider attribute="class">
+      <main className={`${inter.variable}`}>
+        <Component {...pageProps} />
+      </main>
+    </ThemeProvider>
   );
 }

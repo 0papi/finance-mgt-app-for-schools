@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "./Header";
 
 export default function Layout({ children, title, description, keywords }) {
   return (
@@ -8,6 +9,7 @@ export default function Layout({ children, title, description, keywords }) {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
+      <Header/>
       {children}
     </div>
   );
