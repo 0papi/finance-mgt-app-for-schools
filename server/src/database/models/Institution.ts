@@ -3,6 +3,7 @@
  */
 export const DOCUMENT_NAME = "Institution";
 import { model, Schema, Types } from "mongoose";
+import { userRoles } from "../../types/userRoles";
 
 export interface IInstitute {
   _id: Types.ObjectId;
@@ -17,6 +18,7 @@ export interface IInstitute {
   phoneOfPersonRegistering: number;
   positionOfPersonRegistering: string;
   nameOfPersonRegistering: string;
+  role: string;
 }
 
 const InstitutionSchema = new Schema<IInstitute>({
@@ -64,6 +66,10 @@ const InstitutionSchema = new Schema<IInstitute>({
   },
   nameOfPersonRegistering: {
     type: Schema.Types.String,
+  },
+  role: {
+    type: Schema.Types.String,
+    default: userRoles.ADMIN,
   },
 });
 
